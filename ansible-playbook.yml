@@ -21,9 +21,6 @@
   - name: create tag to image
     command: docker tag ansible-img abdallah02/car-website.img
   
-  - name: push image to docker hub
-    command: docker push abdallah02/car-website.img
-
 
   - name: run container from ansible-img
     command: docker run -d --name ansible-container -p 8087:80 ansible-img
